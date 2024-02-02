@@ -1,0 +1,316 @@
+//Compare two JSON have the same properties without order:
+
+function compareJSON() {
+  var obj1 = {name: "person1", age:5};
+var obj2 = {age:5 , name:"person1"};
+  if(Object.keys(obj1).length !== Object.keys(obj2).length) {
+    return false;
+  }
+  for (var key in obj1) {
+        if(!obj2.hasOwnProperty(key) || obj1[key] !== obj2[key]) {
+    	      return false;
+    	    }
+        }
+  return true;
+} 
+
+const result = compareJSON();
+console.log(result);
+
+
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].populations);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name.region);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name.region);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name.subregion);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].populations);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name.region);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name.region);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <head>
+        <title>XMLHTTPRequest Example</title>
+    </head>
+    <body>
+        <script>
+            var xhr = XMLHttpRequest();
+            var method = "GET";
+            var url = "https://restcountries.com/v3.1/all";
+            xhr.open(method,url);
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var details = JSON.parse(xhr.responseText);
+                    for (var i=0; i<details.length; i++) {
+                        console.log (details[i].name.subregion);
+
+                    }
+                } else {
+                    console.log("Request failed" , xhr.status);
+                }
+
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>
