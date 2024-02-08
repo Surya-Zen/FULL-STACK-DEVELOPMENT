@@ -108,7 +108,7 @@ class Person {
 
 --------------------------------------------------------------------------------------------
 
-Write a “person” class to hold all the details.
+Write a class to caluculate uber price.
 
 let baseFee = 2
 let cities = ["New Bus stand", "Five False", "Kaasi visvanaathar temple", ]
