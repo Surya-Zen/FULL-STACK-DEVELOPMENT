@@ -68,25 +68,66 @@ console.log("Color Value after setColor: " + c3.getColor());
 console.log(c3.toString());
 console.log("Area: " + c3.getArea());
 console.log("Circumference: " + c3.getCircumference());
+
 -----------------------------------------------------------------------------------
+
 Write a “person” class to hold all the details.
 
 class Person {
+    constructor(name, age, country, passion) {
+      this.name = name;
+      this.age = age;
+      this.country = country;
+      this.passion = passion;
+    }
+  
+    displayDetails() {
+      console.log(`Name: ${this.name}`);
+      console.log(`Age: ${this.age}`);
+      console.log(`Country: ${this.country}`);
+      console.log(`passion: ${this.passion}`);
+    }
+  }
+  
+  let person1 = new Person('Surya', 23, 'Tamilnadu', 'Director');
+  let person2 = new Person('Swetha', 22, 'Kerala', 'Teacher');
+  let person3 = new Person('Pavithra', 22, 'Andhra', 'Accountant');
+  let person4 = new Person('Varsha', 20, 'Karnataka', 'Doctor');
 
-    firstName : "unknown";
-    lastName : "unknown";
+  console.log('Person-1 Details:');
+  person1.displayDetails();
+  
+  console.log('\nPerson-2 Details:');
+  person2.displayDetails();
+
+  console.log('\nPerson-3 Details:');
+  person3.displayDetails();
+
+  console.log('\nPerson-4 Details:');
+  person4.displayDetails();
+
+--------------------------------------------------------------------------------------------
+
+Write a “person” class to hold all the details.
+
+let baseFee = 2
+let cities = ["New Bus stand", "Five False", "Kaasi visvanaathar temple", ]
+let uberRates = [5, 10, 15]
+
+let customerName = "Surya" 
+let customerCity = "Five False" 
+
+console.log("Hello", customerName)
+
+function getRate(customerCity) {
+  
+  function uberRate(customerCity, index) {
+   
+    let finalRate = (uberRates[index]) * baseFee
+    return finalRate
+  }
+  
+  console.log(customerCity, "rate is:", uberRate(customerCity, cities.indexOf(customerCity)))
 }
 
-var person1 = new Person();
-person1.firstName = "Steve";
-person1.lastName = "Jobs";
-            
-console.log(person1.firstName + " " + person1.lastName);
-
-var person2 = new Person();
-person2.firstName = "Bill";
-person2.lastName = "Gates";
-            
-console.log(person2.firstName + " " + person2.lastName );
-------------------------------------------------------------------------------------
-
+getRate(customerCity)
