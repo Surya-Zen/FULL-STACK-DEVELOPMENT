@@ -1,0 +1,92 @@
+https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+class Movie {
+  constructor(title, studio, rating) {
+    if (rating === "") {
+      this.rating  = "PG";
+    }
+    else{
+      this.rating = rating;
+    }
+  }
+  getPG(arr) {
+  }
+}
+let film = new Movie("Casino Royale" , "Eon Productions" , "PG13");
+let ipArr = [{title:"Casino Royale", studio:"Eon Productions", rating:"PG13"},
+             {title:"Casino Royale", studio:"Eon Productions", rating:"PG13"},
+             {title:"Casino Royale", studio:"Eon Productions", rating:"PG13"}];
+  film.getPG(ipArr);
+-------------------------------------------------------------------------------------
+
+https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+var Circle = /** @class */ (function () {
+    function Circle(radius, color) {
+        this.radius = 1.0;
+        this.color = "Red";
+        if (typeof (radius) !== "undefined") {
+            this.radius = radius;
+        }
+        if (typeof (color) !== "undefined") {
+            this.color = color;
+        }
+    }
+    Circle.prototype.getRadius = function () {
+        return this.radius;
+    };
+    Circle.prototype.setRadius = function (radius) {
+        this.radius = radius;
+    };
+    Circle.prototype.getColor = function () {
+        return this.color;
+    };
+    Circle.prototype.setColor = function (color) {
+        this.color = color;
+    };
+    Circle.prototype.toString = function () {
+        return "Radius: " + this.radius + " Color: " + this.color;
+    };
+    Circle.prototype.getArea = function () {
+        return (2 * (Math.PI) * this.radius);
+    };
+    Circle.prototype.getCircumference = function () {
+        return (2 * this.radius);
+    };
+    return Circle;
+}());
+var c1 = new Circle();
+console.log("Constructor with no params: " + c1.toString());
+var c2 = new Circle(3.5);
+console.log("Constructor with one param: " + c2.toString());
+var c3 = new Circle(2.2, 'Yellow');
+console.log("getRadius: " + c3.getRadius());
+c3.setRadius(3.3);
+console.log("Radius value after setRadius: " + c3.getRadius());
+console.log("getColor: " + c3.getColor());
+c3.setColor("Blue");
+console.log("Color Value after setColor: " + c3.getColor());
+console.log(c3.toString());
+console.log("Area: " + c3.getArea());
+console.log("Circumference: " + c3.getCircumference());
+-----------------------------------------------------------------------------------
+Write a “person” class to hold all the details.
+
+class Person {
+
+    firstName : "unknown";
+    lastName : "unknown";
+}
+
+var person1 = new Person();
+person1.firstName = "Steve";
+person1.lastName = "Jobs";
+            
+console.log(person1.firstName + " " + person1.lastName);
+
+var person2 = new Person();
+person2.firstName = "Bill";
+person2.lastName = "Gates";
+            
+console.log(person2.firstName + " " + person2.lastName );
+------------------------------------------------------------------------------------
+
